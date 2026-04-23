@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "~/assets/css/flaticon.css";
+
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Muli"), url("/src/assets/fonts/Muli-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Great Vibes"),
+    url("/src/assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Corinthia";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Corinthia"),
+    url("/src/assets/fonts/Corinthia-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  --font-muli: "Muli", "sans-serif";
+  --font-great-vibes: "Great Vibes", "cursive";
+  --font-corinthia: "Corinthia", "cursive";
+  --color-primary: #86a0b6;
+  --color-text: #002642;
+  --color-paragraph: #848892;
+  --color-icon: #738ea5;
+  --color-icon-bg: #e7eff6;
+  --color-button: #8ba1aa;
+  --filter-color-image: invert(50%) sepia(56%) saturate(156%) brightness(181%)
+    contrast(58%);
+}
+
+body {
+  font-family: "Muli", "sans-serif";
+  font-size: 1rem;
+}
+
+text {
+  font-family: "Muli", "sans-serif";
+}
+
+p {
+  font-size: 16px;
+}
+
+.ant-timeline-item-tail {
+  border-inline-start-color: #cee0ef !important;
+}
+
+.title-flower::before {
+  background-image: url("/images/title-flower.png");
+}
