@@ -13,6 +13,12 @@ declare module "*.webp";
 declare module "*.svg";
 declare module "*.mp3";
 
+// Allow importing CSS/SCSS/LESS (regular and CSS modules)
+declare module "*.css";
+declare module "*.module.css";
+declare module "*.scss";
+declare module "*.module.scss";
+
 // Allow imports that use the '~' alias (e.g. '~/components/foo')
 declare module "~/*";
 declare module "~";

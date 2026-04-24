@@ -5,11 +5,16 @@ import { noimage } from "~/assets/images/album";
 const { useBreakpoint } = Grid;
 
 const SlideContent = () => {
-  const screens = useBreakpoint();
-
   return (
-    <div className="wedding-announcement w-full lg:w-4/5 absolute flex items-center flex-col top-1/2 left-1/2 -translate-1/2">
-      <h3 className="couple-text w-4/5 lg:w-1/2">
+    <div className="wedding-announcement w-70 lg:w-full lg:max-w-95 h-70 lg:h-95 bg-[#b2c9d3cc] rounded-full absolute flex items-center justify-center flex-col top-1/2 left-1/2 -translate-1/2">
+      {/* <p className="text-white mb-4">WE ARE GETTING MARRIED</p>
+        <h3 className="font-great-vibes text-4xl md:text-5xl lg:text-6xl text-white">
+          Save Our Date
+        </h3>
+        <p className="text-white mt-4">16 Tháng Năm 2026</p>*/}
+      <span className="absolute inline-flex h-full w-full animate-pulse-scale rounded-full bg-primary-light opacity-30 z-[-1]"></span>
+
+      <h3 className="couple-text w-full absolute top-0">
         <svg viewBox="0 0 500 190">
           <path
             id="curve"
@@ -21,8 +26,8 @@ const SlideContent = () => {
           </text>
         </svg>
       </h3>
-      <h2 className="couple-name font-great-vibes text-5xl md:text-6xl lg:text-7xl text-white [text-shadow:0px_4px_0px_rgba(0_0_0/_0.35)]">
-        {screens.md && "Gia"} Huy &nbsp;&&nbsp; {screens.md && "Huỳnh"} Như
+      <h2 className="couple-name font-great-vibes text-center text-4xl md:text-5xl text-white [text-shadow:0px_4px_0px_rgba(0_0_0/_0.35)] mt-4">
+        Huỳnh Như <br /> &nbsp;&&nbsp; <br /> Thanh Huy
       </h2>
     </div>
   );
@@ -58,6 +63,7 @@ const HomeCarousel = () => {
       {slides.map(({ src, alt }, index) => (
         <div key={index} className={slideClass}>
           <img src={src} alt={alt} className="size-full object-cover" />
+          <div className="absolute inset-0 bg-black/30" />
           <SlideContent />
         </div>
       ))}

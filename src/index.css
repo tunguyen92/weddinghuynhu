@@ -5,7 +5,7 @@
   font-family: "Muli";
   font-style: normal;
   font-weight: normal;
-  src: local("Muli"), url("/src/assets/fonts/Muli-Regular.woff") format("woff");
+  src: local("Muli"), url("/fonts/Muli-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -14,7 +14,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Great Vibes"),
-    url("/src/assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+    url("/fonts/GreatVibes-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -23,7 +23,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Corinthia"),
-    url("/src/assets/fonts/Corinthia-Regular.ttf") format("truetype");
+    url("/fonts/Corinthia-Regular.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -31,19 +31,47 @@
   --font-muli: "Muli", "sans-serif";
   --font-great-vibes: "Great Vibes", "cursive";
   --font-corinthia: "Corinthia", "cursive";
-  --color-primary: #86a0b6;
-  --color-text: #002642;
-  --color-paragraph: #848892;
+  --color-primary: #85aaba;
+  --color-primary-light: #b2c9d3;
+  --color-text: #414141;
+  --color-paragraph: #212529;
   --color-icon: #738ea5;
   --color-icon-bg: #e7eff6;
   --color-button: #8ba1aa;
+  --animate-pulse-scale: pulse-scale 1s infinite;
   --filter-color-image: invert(50%) sepia(56%) saturate(156%) brightness(181%)
     contrast(58%);
+}
+
+@keyframes pulse-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 body {
   font-family: "Muli", "sans-serif";
   font-size: 1rem;
+}
+
+:root {
+  --ant-font-family: var(--font-muli);
+}
+
+/* Ensure Ant's css-vars root class uses Muli (higher specificity and importance) */
+.css-var-root,
+.css-vars-root,
+:where(.css-var-root),
+:where(.css-vars-root),
+body.css-var-root,
+body.css-vars-root {
+  --ant-font-family: var(--font-muli) !important;
 }
 
 text {
@@ -60,4 +88,12 @@ p {
 
 .title-flower::before {
   background-image: url("/images/title-flower.png");
+  width: 100px;
+  height: 80px;
+}
+
+.ant-float-btn.ant-float-btn-individual {
+  background-color: var(--color-primary);
+  color: white;
+  bottom: 16px;
 }

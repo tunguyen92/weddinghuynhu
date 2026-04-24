@@ -41,23 +41,23 @@ const Header = () => {
   };
 
   useEffect(() => {
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 20);
-  };
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () => {
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header
-  className={`fixed shadow-lg top-0 left-0 w-full z-50 text-white transition-all duration-300 ${
-    isScrolled ? "bg-[#85aaba]" : "bg-[#0000001f]"
-  }`}
->
+      className={`fixed shadow-lg top-0 left-0 w-full z-50 text-white transition-all duration-300 ${
+        isScrolled ? "bg-primary" : "bg-[#0000001f]"
+      }`}
+    >
       <nav className="border-gray-200 px-4 md:px-6 py-4 lg:py-5">
         <div className="flex justify-between items-center mx-auto max-w-7xl">
           <a
@@ -71,6 +71,11 @@ const Header = () => {
             <Drawer
               onClose={onClose}
               open={isOpen}
+              title={
+                <p className="navbar-brand font-great-vibes text-primary! text-2xl! text-center">
+                  Huy <i className="fi flaticon-spring ml-1" /> Như
+                </p>
+              }
               closeIcon={
                 <span className="p-2 text-sm bg-primary text-white rounded-full">
                   <svg
@@ -93,7 +98,7 @@ const Header = () => {
                     <a
                       href={`#${id}`}
                       className={`block py-2 pl-4 text-sm border-b border-gray-100 ${
-                        activeId === id ? "text-primary!" : "text-white!"
+                        activeId === id ? "text-primary!" : "text-text!"
                       }`}
                       onClick={(e) => handleScroll(e, id)}
                     >
@@ -131,7 +136,7 @@ const Header = () => {
             <div className="flex items-center md:order-2">
               <a
                 href="#send-wishes"
-                className="text-button bg-white hover:opacity-80 transition-opacity focus:ring-4 focus:ring-primary font-medium rounded-lg text-sm px-4 md:px-5 py-2 md:py-2.5 mr-2"
+                className="text-primary bg-white hover:opacity-80 transition-opacity focus:ring-4 focus:ring-primary font-medium rounded-lg px-4 md:px-5 py-2 md:py-2.5 mr-2"
                 onClick={(e) => handleScroll(e, "send-wishes")}
               >
                 Gửi lời chúc

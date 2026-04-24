@@ -4,40 +4,34 @@ import footerImage from "~/assets/images/footer-couple-name-frame.png";
 
 const Footer = () => {
   return (
-    <footer className="footer-section py-20 text-center">
-      <div className="container">
-        <div className="px-4">
-          <div className="font-corinthia text-5xl">Lời nhắn</div>
-          <div className="text-paragraph text-justify md:text-center">
-            "Bất kể bạn học chuyên ngành gì, nhất định khi tìm việc phải tìm một
-            công việc mình yêu thích, làm thật giỏi và tạo ra giá trị. Như vậy
-            bạn mới có thể vui vẻ đi làm từ sáng đến tối được. Thêm nữa, hãy tìm
-            một người bạn yêu để ở bên cạnh người đó, như vậy bạn mới có thể
-            hạnh phúc từ tối đến sáng hôm sau".
+    <footer className="footer-section pt-20 md:pt-40 text-center">
+      <div className="container mx-auto px-4 mb-10">
+        <div className="font-corinthia  text-5xl">Lời nhắn</div>
+        <div className="text-paragraph text-justify md:text-center">
+          "Bất kể bạn học chuyên ngành gì, nhất định khi tìm việc phải tìm một
+          công việc mình yêu thích, làm thật giỏi và tạo ra giá trị. Như vậy bạn
+          mới có thể vui vẻ đi làm từ sáng đến tối được. Thêm nữa, hãy tìm một
+          người bạn yêu để ở bên cạnh người đó, như vậy bạn mới có thể hạnh phúc
+          từ tối đến sáng hôm sau".
+        </div>
+      </div>
+
+      <div className="h-125 bg-[url('src/assets/images/welcome/welcome.jpg')] relative before:content-[''] before:absolute before:inset-0 before:bg-[#00000066]">
+        <div className="flex items-center justify-center text-center text-white">
+          <div className="welcome-content z-10">
+            <div className="wedding-announcement size-56.25 lg:size-77.5 lg:max-w-95 bg-[#b2c9d3cc] rounded-full absolute flex items-center justify-center flex-col top-1/2 left-1/2 -translate-1/2 z-10">
+              <span className="absolute inline-flex h-full w-full scale-105 rounded-full border border-primary-light z-[-1]"></span>
+
+              <h2 className="couple-name font-great-vibes text-center text-3xl md:text-4xl">
+                Huỳnh Như <br /> &nbsp;&&nbsp; <br /> Thanh Huy
+              </h2>
+            </div>
           </div>
         </div>
 
-        <div
-          className="couple-name bg-center bg-cover w-75 md:w-103.75 h-87.25 md:h-120.75 mx-auto pl-11 flex items-center justify-center my-16 md:my-24"
-          style={{ backgroundImage: `url(${footerImage})` }}
-        >
-          <h2 className="font-great-vibes text-4xl md:text-5xl">
-            Thanh Tú <br />
-            &amp; <br />
-            Thanh Thủy
-          </h2>
-        </div>
-
-        <h3 className="font-great-vibes text-4xl md:text-5xl mb-4">
-          Forever our love, Thank you
+        <h3 className="font-great-vibes w-full text-3xl md:text-4xl text-white absolute bottom-18 md:bottom-10 left-1/2 -translate-x-1/2 z-10">
+          Forever our love, Thank you!
         </h3>
-        <p className="text-paragraph text-xs! md:text-sm!">
-          Nếu bạn có nhu cầu làm website liên hệ{" "}
-          <a className="text-primary" href="https://www.facebook.com/tu.kantee">
-            chú rể
-          </a>{" "}
-          nhé <SmileOutlined />
-        </p>
       </div>
     </footer>
   );

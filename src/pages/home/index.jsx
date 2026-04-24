@@ -8,6 +8,7 @@ import LoveStory from "~/sections/love-story";
 import Rsvp from "~/sections/rsvp";
 import WeddingDate from "~/sections/wedding-date";
 import WeddingEvents from "~/sections/wedding-events";
+import Welcome from "~/sections/welcome";
 import Wishes from "~/sections/wishes";
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
       <HomeCarousel />
       <WeddingDate />
       <Couple />
+      <Welcome />
       <LoveStory />
       <WeddingEvents />
       <Wishes />

@@ -9,7 +9,7 @@ export const wishesSlice = createApi({
   endpoints: (builder) => ({
     getWishes: builder.query({
       query: () =>
-        "AKfycbwinRt4xI5IlyMyZ4XMk25ZEwt3BUsOdfKR082JXC4lfFAKq-HRah42opSwPNtTE-8p0Q/exec",
+        "AKfycbwMeWoVNb2pDQO7S8z_UiS3b8S1YhNWjH1Ug3DWZH8hgr6p-X5neaNNWwAkxCTtWpun/exec",
       providesTags: ["Wish"],
     }),
     // getWishById: builder.query({
@@ -18,7 +18,7 @@ export const wishesSlice = createApi({
     // }),
     addWish: builder.mutation({
       query: (newWish) => ({
-        url: "/AKfycbwinRt4xI5IlyMyZ4XMk25ZEwt3BUsOdfKR082JXC4lfFAKq-HRah42opSwPNtTE-8p0Q/exec",
+        url: "AKfycbwMeWoVNb2pDQO7S8z_UiS3b8S1YhNWjH1Ug3DWZH8hgr6p-X5neaNNWwAkxCTtWpun/exec",
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(newWish),

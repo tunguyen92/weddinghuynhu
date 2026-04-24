@@ -1,7 +1,5 @@
 import { Image } from "antd";
-import {
-  noimage
-} from "~/assets/images/album";
+import { noimage } from "~/assets/images/album";
 
 const galleries = [
   {
@@ -35,7 +33,7 @@ const Gallery = () => {
     <section className="gallery-section py-10 px-4" id="gallery">
       <div className="container mx-auto">
         <div className="title-flower mb-5 text-center">
-          <h2 className="title-flower relative font-great-vibes text-4xl pt-10 md:pt-14 md:text-5xl] before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
+          <h2 className="title-flower relative font-great-vibes text-4xl pt-20 md:pt-24 md:text-5xl] before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
             Sweet Moments
           </h2>
 
@@ -54,7 +52,7 @@ const Gallery = () => {
             {galleries.map((item, index) => (
               <div key={item.alt + index} className="group overflow-hidden">
                 <Image
-                  className="transition-transform  max-h-1/2! duration-500 ease-in-out group-hover:scale-120 group-hover:-rotate-3"
+                  className="rounded grayscale-0 transition-all duration-500 group-hover:grayscale-50 group-hover:rounded"
                   src={item.src}
                   alt={item.alt}
                 />

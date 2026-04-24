@@ -5,10 +5,10 @@ import { home, restaurant } from "~/assets/images/wedding-event";
 
 const WeddingEvents = () => {
   return (
-    <section id="events" className="love-story py-10 px-4">
+    <section id="events" className="love-story py-25 px-4">
       <div className="container mx-auto">
         <div className="title-flower mb-5 text-center">
-          <h2 className="title-flower relative font-great-vibes text-4xl pt-10 md:pt-12 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
+          <h2 className="title-flower relative font-great-vibes text-4xl pt-20 md:pt-24 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
             Wedding Events
           </h2>
 
@@ -26,16 +26,15 @@ const WeddingEvents = () => {
                 alt="home"
               />
             </div>
-            <h3 className="uppercase text-xl mt-8 mb-4 font-semibold">
-              The Reception
+            <h3 className="font-great-vibes text-3xl mt-8 mb-4">
+              Wedding Ceremony
             </h3>
             <ul className="text-sm text-paragraph">
               <li className="flex items-center gap-2 mb-2">
-                <CiLocationOn className="text-icon" /> Tại gia, TP. Quy Nhơn,
-                Bình Định
+                <CiLocationOn className="text-icon" /> Địa chỉ
               </li>
               <li className="flex items-center gap-2">
-                <CiClock2 className="text-icon" /> 06/04/2025 (08h00)
+                <CiClock2 className="text-icon" /> 16/05/2026 (18h00)
               </li>
             </ul>
             <p className="text-paragraph my-4">
@@ -44,10 +43,6 @@ const WeddingEvents = () => {
               trọng đại. Gia đình kính mời các bậc trưởng bối, cô chú và các bạn
               đến dự, cùng nhau chứng giám và gửi lời chúc phúc cho đôi uyên
               ương.
-              <br />
-              👔 Trang phục: Lịch sự, trang nhã.
-              <br />⏳ Lưu ý: Vui lòng có mặt đúng giờ để không bỏ lỡ khoảnh
-              khắc quan trọng.
             </p>
             <a
               className="see-location-btn flex items-center gap-2 uppercase text-xs md:text-sm font-bold py-2 md:py-3 px-4 md:px-6 border md:border-2 border-primary rounded-4xl w-fit"
@@ -66,16 +61,15 @@ const WeddingEvents = () => {
                 alt="restaurant"
               />
             </div>
-            <h3 className="uppercase text-xl mt-8 mb-4 font-semibold">
-              Wedding party
+            <h3 className="font-great-vibes text-3xl mt-8 mb-4">
+              Wedding Dinner
             </h3>
             <ul className="text-sm text-paragraph">
               <li className="flex items-center gap-2 mb-2">
-                <CiLocationOn className="text-icon" /> Nhà hàng Keeng, TT. Long
-                Thành, Đồng Nai
+                <CiLocationOn className="text-icon" /> Địa chỉ
               </li>
               <li className="flex items-center gap-2">
-                <CiClock2 className="text-icon" /> 26/04/2025 (19h00)
+                <CiClock2 className="text-icon" /> 16/05/2026 (18h00)
               </li>
             </ul>
             <p className="text-paragraph my-4">
@@ -83,11 +77,6 @@ const WeddingEvents = () => {
               gian ấm cúng và tạo nên những kỷ niệm đáng nhớ. Rất mong bạn sẽ có
               mặt để chung vui và góp phần làm cho ngày đặc biệt này thêm trọn
               vẹn!
-              <br />
-              👗 Trang phục: Lịch sự, trang nhã.
-              <br />
-              🎉 Lưu ý: Vui lòng có mặt đúng giờ để không bỏ lỡ khoảnh khắc quan
-              trọng.
             </p>
             <a
               className="see-location-btn flex items-center gap-2 uppercase text-xs md:text-sm font-bold py-2 md:py-3 px-4 md:px-6 border md:border-2 border-primary rounded-4xl w-fit"

@@ -11,12 +11,13 @@ import {
   story4,
   timelineShape,
 } from "~/assets/images/story";
+import { noimage } from "~/assets/images/album";
 
 const timelineItems = [
   {
     title: "First time we meet",
     text: "Chúng mình gặp nhau một cách thật tình cờ trong buổi gặp gỡ cùng bạn bè. Từ những câu chuyện xã giao ban đầu, dần dần chúng mình nói cười nhiều hơn. Và có lẽ, ngay khoảnh khắc đó, một điều gì đó đẹp đẽ đã bắt đầu.",
-    imgSrc: story1,
+    imgSrc: noimage,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">
         <GoDotFill className="text-icon" size={20} />
@@ -27,7 +28,7 @@ const timelineItems = [
   {
     title: "First Date",
     text: "Sau khi bày tỏ tình cảm và được đáp lại, chúng mình có buổi hẹn đầu tiên. Chút hồi hộp, chút ngại ngùng, nhưng chỉ cần có nhau là đủ. Một khởi đầu nhẹ nhàng, nhưng đầy ý nghĩa.",
-    imgSrc: story2,
+    imgSrc: noimage,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">
         <PiCalendarHeartThin className="text-icon" size={20} />
@@ -38,7 +39,7 @@ const timelineItems = [
   {
     title: "Marriage Proposal",
     text: "Từ hai con người xa lạ, chúng ta dần trở thành một phần quan trọng trong cuộc sống của nhau. Và giờ đây, một chương mới lại mở ra, nơi chúng ta không chỉ đồng hành mà còn cùng nhau xây dựng một tương lai chung.",
-    imgSrc: story3,
+    imgSrc: noimage,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">
         <LiaDoveSolid className="text-icon" size={20} />
@@ -49,7 +50,7 @@ const timelineItems = [
   {
     title: "Our Engagement",
     text: "Cuối cùng khoảnh khắc đặc biệt cũng đã đến. Cảm ơn vì chúng ta luôn bên nhau, cùng chia sẻ niềm vui, nỗi buồn và những giấc mơ. Không chỉ là người yêu, chúng ta còn là những người bạn, những tri kỷ cùng đồng hành. Hôm nay là một dấu mốc ý nghĩa, và chặng đường phía trước chắc chắn sẽ còn nhiều điều tuyệt vời hơn nữa. Chúc mừng chúng ta!",
-    imgSrc: story4,
+    imgSrc: noimage,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">
         <GiDiamondRing className="text-icon" size={20} />
@@ -71,7 +72,7 @@ const LoveStory = () => {
     <section id="story" className="love-story text-center pt-20">
       <div className="container mx-auto">
         <div className="title-flower mb-5">
-          <h2 className="title-flower relative font-great-vibes text-4xl pt-10 md:pt-14 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
+          <h2 className="title-flower relative font-great-vibes text-4xl pt-20 md:pt-22 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
             Our Love Story
           </h2>
 
@@ -80,65 +81,66 @@ const LoveStory = () => {
           </div>
         </div>
 
-        <Timeline
-          mode="alternate"
-          className="overflow-hidden hidden md:block"
-          style={{ overflow: "hidden", padding: 16 }}
-          items={timelineItems.map(
-            ({ title, text, imgSrc, dot, alignment }, index) => ({
-              icon: dot,
-              title:
-                title && text ? (
-                  <div
-                    className={`story-text px-10 mt-12 ${
-                      alignment === "right" ? "" : "text-right"
-                    }`}
-                  >
-                    <h3 className="text-2xl text-text font-medium uppercase mb-4">
-                      {title}
-                    </h3>
-                    <p
-                      className={`text-paragraph leading-7 md:text-lg! ${
-                        alignment === "right" ? "pr-20" : "pl-20"
+        <div className="overflow-hidden hidden md:block">
+          <Timeline
+            mode="alternate"
+            style={{ overflow: "hidden", padding: 16 }}
+            items={timelineItems.map(
+              ({ title, text, imgSrc, dot, alignment }, index) => ({
+                icon: dot,
+                title:
+                  title && text ? (
+                    <div
+                      className={`story-text px-10 mt-12 ${
+                        alignment === "right" ? "" : "text-right"
                       }`}
                     >
-                      {text}
-                    </p>
-                  </div>
-                ) : null,
-              content: imgSrc ? (
-                <div
-                  className={`px-10 ${
-                    alignment === "right" ? "flex justify-end" : ""
-                  }`}
-                >
+                      <h3 className="font-great-vibes text-3xl text-text font-medium mb-4">
+                        {title}
+                      </h3>
+                      <p
+                        className={`text-paragraph leading-7 md:text-lg! ${
+                          alignment === "right" ? "pr-20" : "pl-20"
+                        }`}
+                      >
+                        {text}
+                      </p>
+                    </div>
+                  ) : null,
+                content: imgSrc ? (
                   <div
-                    className={`img-holder relative max-w-80 max-h-80 p-2.5 border border-dashed border-primary rounded-full before:absolute ${
-                      alignment === "right"
-                        ? " before:-right-14  before:rotate-102"
-                        : " before:-left-16  before:rotate-66"
-                    } before:top-48 before:size-[90%] before:border-l before:border-dashed before:border-primary before:rounded-full before:-z-10`}
+                    className={`px-10 ${
+                      alignment === "right" ? "flex justify-end" : ""
+                    }`}
                   >
-                    <img
-                      decoding="async"
-                      className="rounded-full object-cover size-full"
-                      src={imgSrc}
-                      alt=""
-                    />
-                    <div className="story-shape-img absolute left-14 -bottom-11">
+                    <div
+                      className={`img-holder relative max-w-80 max-h-80 p-2.5 border border-dashed border-primary rounded-full before:absolute ${
+                        alignment === "right"
+                          ? " before:-right-14  before:rotate-102"
+                          : " before:-left-16  before:rotate-66"
+                      } before:top-48 before:size-[90%] before:border-l before:border-dashed before:border-primary before:rounded-full before:-z-10`}
+                    >
                       <img
                         decoding="async"
-                        className="object-cover"
-                        src={timelineShape}
-                        alt="timeline-shape"
+                        className="rounded-full object-cover size-full"
+                        src={imgSrc}
+                        alt=""
                       />
+                      <div className="story-shape-img absolute left-14 -bottom-11">
+                        <img
+                          decoding="async"
+                          className="object-cover"
+                          src={timelineShape}
+                          alt="timeline-shape"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
-              ) : null,
-            })
-          )}
-        />
+                ) : null,
+              }),
+            )}
+          />
+        </div>
 
         <div className="story-timeline md:hidden flex flex-col items-center px-4">
           {timelineItems.map(
@@ -156,20 +158,20 @@ const LoveStory = () => {
                       <img
                         className="object-cover"
                         decoding="async"
-                        src="https://wpocean.com/wp/loveme/wp-content/uploads/2021/10/timeline-shape.png"
+                        src={timelineShape}
                         alt=""
                       />
                     </div>
                   </div>
 
                   <div className="story-text px-6 py-9 bg-[#86a0b60d] rounded-lg">
-                    <h3 className="text-xl text-text font-semibold uppercase mb-4">
+                    <h3 className="font-great-vibes text-3xl text-text font-medium mb-4">
                       {title}
                     </h3>
                     <p className="text-paragraph leading-7">{text}</p>
                   </div>
                 </div>
-              )
+              ),
           )}
         </div>
       </div>
