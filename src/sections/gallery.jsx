@@ -1,30 +1,37 @@
 import { Image } from "antd";
-import { noimage } from "~/assets/images/album";
+import {
+  img61,
+  img62,
+  img63,
+  img64,
+  img65,
+  img66,
+} from "~/assets/images/album";
 
 const galleries = [
   {
-    src: noimage,
-    alt: "gallery101",
+    src: img61,
+    alt: "gallery61",
   },
   {
-    src: noimage,
-    alt: "gallery102",
+    src: img62,
+    alt: "gallery62",
   },
   {
-    src: noimage,
-    alt: "gallery103",
+    src: img63,
+    alt: "gallery63",
   },
   {
-    src: noimage,
-    alt: "gallery104",
+    src: img64,
+    alt: "gallery64",
   },
   {
-    src: noimage,
-    alt: "gallery105",
+    src: img65,
+    alt: "gallery65",
   },
   {
-    src: noimage,
-    alt: "gallery201",
+    src: img66,
+    alt: "gallery66",
   },
 ];
 
@@ -42,7 +49,7 @@ const Gallery = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
           <Image.PreviewGroup
             preview={{
               onChange: (current, prev) =>
@@ -52,7 +59,7 @@ const Gallery = () => {
             {galleries.map((item, index) => (
               <div key={item.alt + index} className="group overflow-hidden">
                 <Image
-                  className="rounded grayscale-0 transition-all duration-500 group-hover:grayscale-50 group-hover:rounded"
+                  className="rounded-lg transition-all duration-500 group-hover:scale-110"
                   src={item.src}
                   alt={item.alt}
                 />

@@ -1,8 +1,11 @@
-import React from "react";
+import welcomeImg from "../assets/images/welcome/welcome.jpg";
 
 const Welcome = () => {
   return (
-    <div className="welcome h-125 bg-[url('src/assets/images/welcome/welcome.jpg')] bg-fixed flex items-center justify-center text-center text-white relative before:content-[''] before:absolute before:inset-0 before:bg-[#000000cc] before:opacity-90">
+    <div
+      className="welcome h-125 bg-fixed flex items-center justify-center text-center text-white relative before:content-[''] before:absolute before:inset-0 before:bg-[#000000cc] before:opacity-90"
+      style={{ backgroundImage: `url(${welcomeImg})` }}
+    >
       <div className="container">
         <div className="welcome-content relative z-1">
           <h2 className="font-great-vibes text-4xl md:text-6xl">

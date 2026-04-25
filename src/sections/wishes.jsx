@@ -1,4 +1,4 @@
-import { Carousel } from "antd";
+import { Carousel, Grid } from "antd";
 import { RiDoubleQuotesL } from "react-icons/ri";
 
 import { useGetWishesQuery } from "~/services/wishesSlice";
@@ -42,31 +42,22 @@ const bestWishes = {
 };
 
 const Wishes = () => {
+  const { useBreakpoint } = Grid;
+
+  const screens = useBreakpoint();
+
+  const slidesToShow = screens.lg ? 3 : screens.md ? 2 : 1;
+  const adaptiveHeight = screens.xs || screens.sm ? true : false;
+
   const settings = {
     dots: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    // adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    slidesToShow: slidesToShow,
+    slidesToScroll: slidesToShow,
+    adaptiveHeight,
   };
 
-  const { data = bestWishes, error } = useGetWishesQuery();
+  const { data = bestWishes, error } = useGetWishesQuery(undefined);
 
   if (error) console.log(error);
 

@@ -97,3 +97,7 @@ p {
   color: white;
   bottom: 16px;
 }
+
+.ant-image {
+  overflow: hidden;
+}
