@@ -54,6 +54,8 @@ const Wishes = () => {
     speed: 500,
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToShow,
+    autoplay: true,
+    autoplaySpeed: 3000,
     adaptiveHeight,
   };
 
