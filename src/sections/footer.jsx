@@ -1,6 +1,4 @@
-import { SmileOutlined } from "@ant-design/icons";
-
-import footerImage from "~/assets/images/footer-couple-name-frame.png";
+import welcomeImg from "../assets/images/welcome/welcome.jpg";
 
 const Footer = () => {
   return (
@@ -16,7 +14,14 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="h-125 bg-[url('src/assets/images/welcome/welcome.jpg')] relative before:content-[''] before:absolute before:inset-0 before:bg-[#00000066]">
+      <div
+        className="welcome h-125 bg-fixed flex items-center justify-center text-center text-white relative before:content-[''] before:absolute before:inset-0 before:bg-[#000000cc] before:opacity-90"
+        style={{
+          backgroundImage: `url(${welcomeImg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="flex items-center justify-center text-center text-white">
           <div className="welcome-content z-10">
             <div className="wedding-announcement size-56.25 lg:size-77.5 lg:max-w-95 bg-[#b2c9d3cc] rounded-full absolute flex items-center justify-center flex-col top-1/2 left-1/2 -translate-1/2 z-10">

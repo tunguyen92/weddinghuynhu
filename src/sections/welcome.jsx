@@ -4,7 +4,11 @@ const Welcome = () => {
   return (
     <div
       className="welcome h-125 bg-fixed flex items-center justify-center text-center text-white relative before:content-[''] before:absolute before:inset-0 before:bg-[#000000cc] before:opacity-90"
-      style={{ backgroundImage: `url(${welcomeImg})` }}
+      style={{
+        backgroundImage: `url(${welcomeImg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
     >
       <div className="container">
         <div className="welcome-content relative z-1">
