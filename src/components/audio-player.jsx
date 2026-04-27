@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { PauseCircleOutlined, PlayCircleOutlined } from "@ant-design/icons";
 
-import iDo from "~/assets/audios/i-do.m4a";
+import music from "~/assets/audios/music.mp3";
 
 function AudioPlayer() {
   const audioRef = useRef(null);
@@ -19,7 +19,7 @@ function AudioPlayer() {
 
   return (
     <div className="fixed bottom-5 md:bottom-7 left-5 md:left-7">
-      <audio ref={audioRef} src={iDo} onEnded={() => setIsPlaying(false)} />
+      <audio ref={audioRef} src={music} onEnded={() => setIsPlaying(false)} />
 
       {!isPlaying ? (
         <button

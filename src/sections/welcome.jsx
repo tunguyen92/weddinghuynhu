@@ -16,8 +16,10 @@ const Welcome = () => {
             Welcome to our big day
           </h2>
           <p className="md:text-xl! p-6 max-w-175 mx-auto">
-            Tụi mình đều là dân Chẩn đoán y học cùng nhau, nên đến đây với tụi
-            mình để cùng Chẩn đoán cấp độ hạnh phúc cho mọi người nhé!
+            “Chúng mình đều xuất thân từ ngành Chẩn đoán y học, nên hôm nay mời
+            các bạn đến không chỉ để chúc phúc, mà còn cùng nhau ‘chẩn đoán’ và
+            lan tỏa những cung bậc hạnh phúc trọn vẹn nhất trong ngày đặc biệt
+            này.”
           </p>
         </div>
       </div>

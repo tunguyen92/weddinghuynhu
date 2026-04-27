@@ -15,7 +15,7 @@ import {
 const timelineItems = [
   {
     title: "First time we meet",
-    text: "Chúng mình gặp nhau một cách thật tình cờ trong buổi gặp gỡ cùng bạn bè. Từ những câu chuyện xã giao ban đầu, dần dần chúng mình nói cười nhiều hơn. Và có lẽ, ngay khoảnh khắc đó, một điều gì đó đẹp đẽ đã bắt đầu.",
+    text: "Chúng mình gặp nhau tại chốn Sài Gòn hoa lệ, từ những câu nói đùa vu vơ mà lại thầm cảm mến nhau tự bao giờ. Từ những câu chuyện xã giao ban đầu, dần dần chúng mình nói cười nhiều hơn. Và có lẽ, ngay khoảnh khắc đó, một điều gì đó đẹp đẽ đã bắt đầu.",
     imgSrc: story1,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">
@@ -37,7 +37,7 @@ const timelineItems = [
   },
   {
     title: "Marriage Proposal",
-    text: "Từ hai con người xa lạ, chúng ta dần trở thành một phần quan trọng trong cuộc sống của nhau. Và giờ đây, một chương mới lại mở ra, nơi chúng ta không chỉ đồng hành mà còn cùng nhau xây dựng một tương lai chung.",
+    text: "Dù là hai con người xa lạ nhưng đã cảm giác thân quen như tự kiếp nào. Chúng mình dần trở thành một phần quan trọng trong cuộc sống của nhau. Và giờ đây, một chương mới lại mở ra, nơi chúng mình không chỉ đồng hành mà còn cùng nhau xây dựng một tương lai chung.",
     imgSrc: story3,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">
@@ -48,7 +48,7 @@ const timelineItems = [
   },
   {
     title: "Our Engagement",
-    text: "Cuối cùng khoảnh khắc đặc biệt cũng đã đến. Cảm ơn vì chúng ta luôn bên nhau, cùng chia sẻ niềm vui, nỗi buồn và những giấc mơ. Không chỉ là người yêu, chúng ta còn là những người bạn, những tri kỷ cùng đồng hành. Hôm nay là một dấu mốc ý nghĩa, và chặng đường phía trước chắc chắn sẽ còn nhiều điều tuyệt vời hơn nữa. Chúc mừng chúng ta!",
+    text: "Cuối cùng khoảnh khắc đặc biệt cũng đã đến. Cảm ơn vì chúng mình luôn bên nhau, cùng chia sẻ niềm vui, nỗi buồn và những giấc mơ. Không chỉ là người yêu, chúng mình còn là những người bạn, những tri kỷ cùng đồng hành. Hôm nay là một dấu mốc ý nghĩa, và chặng đường phía trước chắc chắn sẽ còn nhiều điều tuyệt vời hơn nữa. Chúc mừng chúng mình!",
     imgSrc: story4,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">

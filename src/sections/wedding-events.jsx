@@ -31,10 +31,11 @@ const WeddingEvents = () => {
             </h3>
             <ul className="text-sm text-paragraph">
               <li className="flex items-center gap-2 mb-2">
-                <CiLocationOn className="text-icon" /> Địa chỉ
+                <CiLocationOn className="text-icon" /> 56 Bình Thành, P.Bình
+                Tân, TPHCM
               </li>
               <li className="flex items-center gap-2">
-                <CiClock2 className="text-icon" /> 16/05/2026 (18h00)
+                <CiClock2 className="text-icon" /> 11h30, 16/5/2026
               </li>
             </ul>
             <p className="text-paragraph my-4">
@@ -46,7 +47,7 @@ const WeddingEvents = () => {
             </p>
             <a
               className="see-location-btn flex items-center gap-2 uppercase text-xs md:text-sm font-bold py-2 md:py-3 px-4 md:px-6 border md:border-2 border-primary rounded-4xl w-fit"
-              href="https://maps.app.goo.gl/gm7eGaAUUT9VLFgp9"
+              href="https://maps.app.goo.gl/kJJ2DwsizXgPHqG6A"
               target="_blank"
             >
               Xem chỉ đường <FaArrowRight className="text-icon" size={20} />
@@ -66,10 +67,11 @@ const WeddingEvents = () => {
             </h3>
             <ul className="text-sm text-paragraph">
               <li className="flex items-center gap-2 mb-2">
-                <CiLocationOn className="text-icon" /> Địa chỉ
+                <CiLocationOn className="text-icon" /> 666 đường số 1, P.Bình
+                Tân, TPHCM
               </li>
               <li className="flex items-center gap-2">
-                <CiClock2 className="text-icon" /> 16/05/2026 (18h00)
+                <CiClock2 className="text-icon" /> 12h30, 16/5/2026
               </li>
             </ul>
             <p className="text-paragraph my-4">
@@ -80,7 +82,7 @@ const WeddingEvents = () => {
             </p>
             <a
               className="see-location-btn flex items-center gap-2 uppercase text-xs md:text-sm font-bold py-2 md:py-3 px-4 md:px-6 border md:border-2 border-primary rounded-4xl w-fit"
-              href="https://maps.app.goo.gl/T138MSvWYCfuPFQf9"
+              href="https://maps.app.goo.gl/wpLgp8gHMc8hiNn1A"
               target="_blank"
             >
               Xem chỉ đường <FaArrowRight className="text-icon" size={20} />

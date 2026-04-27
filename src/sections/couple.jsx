@@ -15,7 +15,7 @@ const Couple = () => {
         </h2>
       </div>
 
-      <div className="couple-area flex flex-col md:flex-row items-center justify-center px-2.5 md:px-10">
+      <div className="couple-area flex flex-col md:flex-row items-start justify-center px-2.5 md:px-10">
         <div className="bride mb-7.5 md:mb-0 flex-1 md:mr-6">
           <div className="mb-5">
             <img
@@ -28,13 +28,13 @@ const Couple = () => {
           <h3 className="font-great-vibes text-3xl text-text my-4">
             Huỳnh Như
           </h3>
-          <p className="text-paragraph leading-7">
+          <p className="text-paragraph leading-7 max-w-85 mx-auto">
             Xin chào đại gia đình anh chị em bạn bè đồng nghiệp thân mến của
-            Như.
-            <br />
-            <strong>
-              Nên viết nhiều về bản thân, mục tiêu, câu nói yêu thích,..
-            </strong>
+            Như! Thật là một phước lành khi chúng ta có duyên gặp nhau ở đây và
+            hơn nữa là vào ngày trọng đại sắp tới này. Vô cùng biết ơn khi mọi
+            người có thể đến chung vui và ăn mừng ngày lên xe hoa của Như, đánh
+            dấu một cột mốc trưởng thành và giai đoạn mới của cuộc đời! Xin
+            nguyện an lành đến với tất cả chúng ta!
           </p>
           <div className="social flex justify-center mt-4 md:mt-8">
             <Link
@@ -67,12 +67,10 @@ const Couple = () => {
           <h3 className="font-great-vibes text-3xl text-text my-4">
             Thanh Huy
           </h3>
-          <p className="text-paragraph leading-7">
-            Xin chào quý anh chị em bạn bè đồng nghiệp thân mến.
-            <br />
-            <strong>
-              Nên viết nhiều về bản thân, mục tiêu, câu nói yêu thích,..
-            </strong>
+          <p className="text-paragraph leading-7 max-w-85 mx-auto">
+            Xin chào quý anh chị em bạn bè đồng nghiệp thân mến. Cảm ơn mọi
+            người đã ở đây và hi vọng mọi người sẽ đến chung vui cùng chúng tôi
+            vào ngày vui sắp tới nhé!
           </p>
           <div className="social flex justify-center mt-4 md:mt-8">
             <Link to="">

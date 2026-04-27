@@ -1,33 +1,29 @@
 import { Carousel, Grid } from "antd";
 
 import { Arrow } from "~/components/arrow";
-import { img11, img12, img66 } from "~/assets/images/album";
+import { img11, img12 } from "~/assets/images/album";
+import { carousel01, carousel02 } from "~/assets/images/carousel";
 const { useBreakpoint } = Grid;
 
 const SlideContent = () => {
-  return (
-    <div className="wedding-announcement w-70 lg:w-full lg:max-w-95 h-70 lg:h-95 bg-[#b2c9d3cc] rounded-full absolute flex items-center justify-center flex-col top-1/2 left-1/2 -translate-1/2">
-      {/* <p className="text-white mb-4">WE ARE GETTING MARRIED</p>
-        <h3 className="font-great-vibes text-4xl md:text-5xl lg:text-6xl text-white">
-          Save Our Date
-        </h3>
-        <p className="text-white mt-4">16 Tháng Năm 2026</p>*/}
-      <span className="absolute inline-flex h-full w-full animate-pulse-scale rounded-full bg-primary-light opacity-30 z-[-1]"></span>
+  const screens = useBreakpoint();
 
-      <h3 className="couple-text w-full absolute top-0">
+  return (
+    <div className="wedding-announcement w-full lg:w-4/5 absolute flex items-center flex-col top-1/2 left-1/2 -translate-1/2">
+      <h3 className="couple-text w-4/5 lg:w-1/2">
         <svg viewBox="0 0 500 190">
           <path
             id="curve"
             d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
             style={{ fill: "transparent" }}
           />
-          <text className="text-[41px] fill-white">
+          <text className="text-[41px] [text-shadow:0px_3px_0px_rgba(0_0_0/_0.35)] fill-white">
             <textPath xlinkHref="#curve">We're Getting Married</textPath>
           </text>
         </svg>
       </h3>
-      <h2 className="couple-name font-great-vibes text-center text-4xl md:text-5xl text-white mt-4">
-        Huỳnh Như <br /> &nbsp;&&nbsp; <br /> Thanh Huy
+      <h2 className="couple-name font-great-vibes text-5xl md:text-6xl lg:text-7xl text-white [text-shadow:0px_4px_0px_rgba(0_0_0/_0.35)]">
+        {screens.md && "Thanh"} Huy &nbsp;&&nbsp; {screens.md && "Huỳnh"} Như
       </h2>
     </div>
   );
@@ -38,8 +34,8 @@ const HomeCarousel = () => {
   const isLargeScreens = screens.md;
 
   const slides = [
-    { src: isLargeScreens ? img66 : img11, alt: "Image 11" },
-    { src: isLargeScreens ? img66 : img12, alt: "Image 12" },
+    { src: isLargeScreens ? carousel01 : img11, alt: "Image 11" },
+    { src: isLargeScreens ? carousel02 : img12, alt: "Image 12" },
   ];
 
   return (
