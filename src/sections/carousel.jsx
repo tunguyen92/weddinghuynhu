@@ -1,8 +1,12 @@
 import { Carousel, Grid } from "antd";
 
 import { Arrow } from "~/components/arrow";
-import { img11, img12 } from "~/assets/images/album";
-import { carousel01, carousel02 } from "~/assets/images/carousel";
+import {
+  carousel01,
+  carousel02,
+  carouselMobile01,
+  carouselMobile02,
+} from "~/assets/images/carousel";
 const { useBreakpoint } = Grid;
 
 const SlideContent = () => {
@@ -34,8 +38,8 @@ const HomeCarousel = () => {
   const isLargeScreens = screens.md;
 
   const slides = [
-    { src: isLargeScreens ? carousel01 : img11, alt: "Image 11" },
-    { src: isLargeScreens ? carousel02 : img12, alt: "Image 12" },
+    { src: isLargeScreens ? carousel01 : carouselMobile01, alt: "Image 11" },
+    { src: isLargeScreens ? carousel02 : carouselMobile02, alt: "Image 12" },
   ];
 
   return (
@@ -50,7 +54,7 @@ const HomeCarousel = () => {
       {slides.map(({ src, alt }, index) => (
         <div key={index} className="background-slide h-screen relative">
           <img src={src} alt={alt} className="size-full object-cover" />
-          <div className="absolute inset-0 bg-black/30" />
+          {/* <div className="absolute inset-0 bg-black/30" /> */}
           <SlideContent />
         </div>
       ))}

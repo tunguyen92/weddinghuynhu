@@ -1,10 +1,7 @@
 import { Grid } from "antd";
-import { NavLink, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 
-import {
-  invitationDesktop,
-  invitationMobile,
-} from "~/assets/images/invitation";
+import { invi01 } from "~/assets/images/invitation";
 import AudioPlayer from "~/components/audio-player";
 
 const { useBreakpoint } = Grid;
@@ -12,71 +9,87 @@ const { useBreakpoint } = Grid;
 const BrideInvitation = () => {
   const screens = useBreakpoint();
 
-  const { id } = useParams();
-  const fullUrl = `https://wedding-tu-thuy.netlify.app/invitation/${id}`;
+  const { lang, id } = useParams();
+  const fullUrl = `https://weddinghuynhu.netlify.app/${lang}/${id}`;
 
   return (
     <>
-      <title>{`Tú & Thủy - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}</title>
+      <title>{`Huy & Như - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}</title>
       <meta
         property="og:title"
-        content={`Tú & Thủy - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}
+        content={`Huy & Như - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}
       />
       <meta
         property="og:description"
-        content={`Tú & Thủy - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}
+        content={`Huy & Như - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}
       />
       <meta
         property="og:image"
-        content="https://wedding-tu-thuy.netlify.app/assets/3148-DiY2hI3z.jpg"
+        content="https://weddinghuynhu.netlify.app/assets/carousel02-CjerNx2D.jpg"
       />
       <meta
         property="og:image:alt"
-        content="https://wedding-tu-thuy.netlify.app/assets/3148-DiY2hI3z.jpg"
+        content="https://weddinghuynhu.netlify.app/assets/carousel02-CjerNx2D.jpg"
       />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={fullUrl} />
       <link rel="canonical" href={fullUrl} />
       <link
         rel="image_src"
-        href="https://wedding-tu-thuy.netlify.app/assets/3148-DiY2hI3z.jpg"
+        href="https://weddinghuynhu.netlify.app/assets/carousel02-CjerNx2D.jpg"
       />
       <meta
         property="og:site_name"
-        content={`Tú & Thủy - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}
+        content={`Huy & Như - Thân mời ${id} đến buổi tiệc cùng chung vui với gia đình.`}
       />
       <meta
         name="thumbnail"
-        content="https://wedding-tu-thuy.netlify.app/assets/3148-DiY2hI3z.jpg"
+        content="https://weddinghuynhu.netlify.app/assets/carousel02-CjerNx2D.jpg"
       />
 
-      <div className="relative h-screen">
+      <div className="relative max-w-122 h-screen mx-auto px-10 text-center pt-25">
         <img
-          className="h-full w-full object-cover"
-          src={screens.md ? invitationDesktop : invitationMobile}
+          className="absolute top-0 left-0 h-full w-full object-cover z-[-1]"
+          src={invi01}
           alt="invitation"
         />
-        <div className="absolute top-[61.6%] left-[10%] md:top-[53%] md:left-[27%] md:text-2xl text-[#98907e]">
-          Trân trọng kính mời:
-          <span className="font-corinthia text-3xl md:text-5xl text-[#3a5852] ml-2 md:ml-14">
-            {id} + ...
-          </span>
+        <h3 className=" font-semibold text-[#e0e0db]">SAVE THE DATE</h3>
+
+        <h2 className="couple-name font-great-vibes text-5xl py-10 md:py-12 text-[#e5c88f]">
+          Thanh Huy <br /> &nbsp;&&nbsp; <br /> Huỳnh Như
+        </h2>
+
+        <div className=" text-[#e0e0db] uppercase text-sm">
+          {lang === "vi" ? "Trân trọng kính mời" : "Would like to invite"}
+        </div>
+        <div className=" text-[#e5c88f] font-corinthia text-4xl py-2">{id}</div>
+
+        <div className=" text-[#e0e0db] uppercase text-sm">
+          {lang === "vi"
+            ? "đến dự buổi tiệc chung vui cùng gia đình chúng tôi vào lúc"
+            : "to celebrate with us at"}
+        </div>
+
+        <div className=" text-[#e0e0db] my-6 text-2xl md:text-3xl font-great-vibes">
+          12h30, 16.05.2026
+        </div>
+        <div className=" text-[#e0e0db] text-xs mb-3">
+          {lang === "vi"
+            ? "666 đường số 1, P.Bình Tân, TPHCM"
+            : "666 Street No.1, Binh Tan District, HCM City"}
         </div>
 
         <a
-          className="absolute bottom-[10%] md:bottom-[10%] lg:bottom-[7%] left-[50%] -translate-x-1/2 text-xs md:text-sm lg:text-base underline text-[#295c53]"
-          href="https://maps.app.goo.gl/T138MSvWYCfuPFQf9"
+          className="block text-xs underline text-white"
+          href="https://maps.app.goo.gl/wpLgp8gHMc8hiNn1A"
           target="_blank"
         >
           Xem chỉ đường
         </a>
 
-        <NavLink
-          to="/"
-          className="absolute bottom-[3%] md:bottom-2 left-[50%] -translate-x-1/2 text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-4 mx-auto text-center"
-        >
-          Về trang chủ
-        </NavLink>
+        <button className="text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-13 md:mt-16">
+          <Link to="/">Về trang chủ</Link>
+        </button>
 
         <AudioPlayer />
       </div>

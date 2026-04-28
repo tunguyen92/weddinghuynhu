@@ -3,7 +3,7 @@ import useCountdown from "~/hooks/useCountdown";
 import bgClock from "~/assets/images/clock-bg.png";
 
 const WeddingDate = () => {
-  const { days, hours, minutes, seconds } = useCountdown("2026-05-16T18:00:00");
+  const { days, hours, minutes, seconds } = useCountdown("2026-05-16T12:30:00");
 
   const time = [
     { text: "Days", time: days },

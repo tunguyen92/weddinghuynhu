@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { PauseCircleOutlined, PlayCircleOutlined } from "@ant-design/icons";
 
-import music from "~/assets/audios/music.mp3";
+import music from "~/assets/audios/music.m4a";
 
 function AudioPlayer() {
   const audioRef = useRef(null);

@@ -136,7 +136,7 @@ const Header = () => {
             <div className="flex items-center md:order-2">
               <a
                 href="#send-wishes"
-                className="text-primary bg-white hover:opacity-80 transition-opacity focus:ring-4 focus:ring-primary font-medium rounded-lg px-4 md:px-5 py-2 md:py-2.5 mr-2"
+                className={`${isScrolled ? "text-primary" : "text-text"} bg-white hover:opacity-80 transition-opacity focus:ring-4 focus:ring-primary font-medium rounded-lg px-4 md:px-5 py-2 md:py-2.5 mr-2`}
                 onClick={(e) => handleScroll(e, "send-wishes")}
               >
                 Gửi lời chúc

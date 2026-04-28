@@ -31,7 +31,7 @@ const WeddingEvents = () => {
             </h3>
             <ul className="text-sm text-paragraph">
               <li className="flex items-center gap-2 mb-2">
-                <CiLocationOn className="text-icon" /> 56 Bình Thành, P.Bình
+                <CiLocationOn className="text-icon" /> 666 đường số 1, P.Bình
                 Tân, TPHCM
               </li>
               <li className="flex items-center gap-2">
@@ -47,7 +47,7 @@ const WeddingEvents = () => {
             </p>
             <a
               className="see-location-btn flex items-center gap-2 uppercase text-xs md:text-sm font-bold py-2 md:py-3 px-4 md:px-6 border md:border-2 border-primary rounded-4xl w-fit"
-              href="https://maps.app.goo.gl/kJJ2DwsizXgPHqG6A"
+              href="https://maps.app.goo.gl/wpLgp8gHMc8hiNn1A"
               target="_blank"
             >
               Xem chỉ đường <FaArrowRight className="text-icon" size={20} />

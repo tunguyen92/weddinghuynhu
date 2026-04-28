@@ -47,7 +47,7 @@ const Wishes = () => {
   const screens = useBreakpoint();
 
   const slidesToShow = screens.lg ? 3 : screens.md ? 2 : 1;
-  const adaptiveHeight = screens.xs || screens.sm ? true : false;
+  const adaptiveHeight = screens.xs ? true : false;
 
   const settings = {
     dots: false,

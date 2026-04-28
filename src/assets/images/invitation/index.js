@@ -1,4 +1,4 @@
-import invitationDesktop from "./invitation-desktop.png";
-import invitationMobile from "./invitation-mobile.png";
+import invi01 from "./invi01.jpg";
+import invi02 from "./invi02.jpg";
 
-export { invitationDesktop, invitationMobile };
+export { invi01, invi02 };

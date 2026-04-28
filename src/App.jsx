@@ -11,7 +11,7 @@ const App = () => {
     <Suspense fallback={<Preloader />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/invitation/:id" element={<InvitationPage />} />
+        <Route path="/:lang/:id" element={<InvitationPage />} />
 
         <Route path="*" element={<HomePage />} />
       </Routes>
