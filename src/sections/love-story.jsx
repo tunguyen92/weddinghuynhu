@@ -26,7 +26,7 @@ const timelineItems = [
   },
   {
     title: "First Date",
-    text: "Sau khi bày tỏ tình cảm và được đáp lại, chúng mình có buổi hẹn đầu tiên. Chút hồi hộp, chút ngại ngùng, nhưng chỉ cần có nhau là đủ. Một khởi đầu nhẹ nhàng, nhưng đầy ý nghĩa.",
+    text: "Sau khi bày tỏ tình cảm và được đáp lại, chúng mình có buổi hẹn đầu tiên. Chút hồi hộp, chút ngại ngùng, nhưng chỉ cần có nhau là đủ. Một khởi đầu nhẹ nhàng, nhưng đầy ý nghĩa. Chúng mình đã gửi cho nhau những bức thư tay đầy kỷ niệm và những nỗi nhớ nhung.",
     imgSrc: story2,
     dot: (
       <div className="rounded-full bg-icon-bg p-3">

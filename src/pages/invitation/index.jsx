@@ -47,7 +47,7 @@ const BrideInvitation = () => {
         content="https://weddinghuynhu.netlify.app/assets/carousel02-CjerNx2D.jpg"
       />
 
-      <div className="relative max-w-122 h-screen mx-auto px-10 text-center pt-25">
+      <div className="relative max-w-90 h-screen mx-auto px-18 text-center pt-30 md:pt-22">
         <img
           className="absolute top-0 left-0 h-full w-full object-cover z-[-1]"
           src={invi01}
@@ -55,7 +55,7 @@ const BrideInvitation = () => {
         />
         <h3 className=" font-semibold text-[#e0e0db]">SAVE THE DATE</h3>
 
-        <h2 className="couple-name font-great-vibes text-5xl py-10 md:py-12 text-[#e5c88f]">
+        <h2 className="couple-name font-great-vibes text-4xl py-10 md:py-12 text-[#e5c88f]">
           Thanh Huy <br /> &nbsp;&&nbsp; <br /> Huỳnh Như
         </h2>
 
@@ -76,7 +76,7 @@ const BrideInvitation = () => {
         <div className=" text-[#e0e0db] text-xs mb-3">
           {lang === "vi"
             ? "666 đường số 1, P.Bình Tân, TPHCM"
-            : "666 Street No.1, Binh Tan District, HCM City"}
+            : "666 Street No.11, Binh Tan District, HCM City"}
         </div>
 
         <a
@@ -87,7 +87,7 @@ const BrideInvitation = () => {
           Xem chỉ đường
         </a>
 
-        <button className="text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-13 md:mt-16">
+        <button className="text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-4">
           <Link to="/">Về trang chủ</Link>
         </button>
 
