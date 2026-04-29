@@ -47,7 +47,7 @@ const BrideInvitation = () => {
         content="https://weddinghuynhu.netlify.app/assets/carousel02-CjerNx2D.jpg"
       />
 
-      <div className="relative max-w-90 h-screen mx-auto px-18 text-center pt-30 md:pt-22">
+      <div className="relative max-w-110 h-screen mx-auto px-18 text-center pt-30 md:pt-22">
         <img
           className="absolute top-0 left-0 h-full w-full object-cover z-[-1]"
           src={invi01}
