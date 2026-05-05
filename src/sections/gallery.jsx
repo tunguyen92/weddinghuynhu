@@ -40,7 +40,7 @@ const Gallery = () => {
     <section className="gallery-section py-10 px-4" id="gallery">
       <div className="container mx-auto">
         <div className="title-flower mb-5 text-center">
-          <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-20 md:pt-22 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-30px)]">
+          <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-14 md:pt-16 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-40px)]">
             Sweet Moments
           </h2>
 

@@ -16,7 +16,7 @@ const WeddingDate = () => {
     <section id="date" className="wedding-date text-center py-20 lg:py-22.5">
       <div className="container mx-auto">
         <div className="title-flower mb-10 md:mb-11">
-          <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-20 md:pt-22 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-30px)]">
+          <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-14 md:pt-16 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-40px)]">
             Save The Date
           </h2>
         </div>

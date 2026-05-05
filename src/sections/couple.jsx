@@ -10,12 +10,12 @@ const Couple = () => {
       className="couple-section container py-25 md:pt-10 md:pb-32.5 mx-auto text-center"
     >
       <div className="title-flower mb-10 md:mb-11">
-        <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-20 md:pt-22 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-30px)]">
+        <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-14 md:pt-16 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-40px)]">
           Happy Couple
         </h2>
       </div>
 
-      <div className="couple-area flex flex-col md:flex-row items-start justify-center px-2.5 md:px-10">
+      <div className="couple-area flex flex-col md:flex-row items-center md:items-start justify-center px-2.5 md:px-10">
         <div className="bride mb-7.5 md:mb-0 flex-1 md:mr-6">
           <div className="mb-5">
             <img
