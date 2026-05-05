@@ -36,7 +36,7 @@ const Rsvp = () => {
           <div className="contact-form-area relative py-5 md:py-15 px-2.5 md:px-10 border-10 md:border-30 border-primary-light bg-white rounded">
             <div className="title-flower mb-10 text-center">
               <span className="text-base md:text-xl text-icon">Let’s Meet</span>
-              <h2 className="font-great-vibes text-3xl sm:text-3xl md:text-4xl my-4">
+              <h2 className="font-great-vibes text-header text-3xl sm:text-3xl md:text-4xl my-4">
                 Share Your Love
               </h2>
               <div className="relative mx-auto max-w-48 before:absolute before:w-16 before:md:w-24 before:h-0.5 before:bg-primary before:top-1/2 before:-left-6 before:md:-left-16 after:absolute after:w-16 after:md:w-24 after:h-0.5 after:bg-primary after:top-1/2 after:-right-6 after:md:-right-16">

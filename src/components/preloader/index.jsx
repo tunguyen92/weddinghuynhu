@@ -3,7 +3,7 @@ import "./styles.css";
 
 const Preloader = () => {
   return (
-    <div className="relative w-screen h-screen bg-[#4a6f8e] flex items-center justify-center">
+    <div className="relative w-screen h-screen bg-primary-light flex items-center justify-center">
       <div className="loader" />
       <img
         className="absolute top-1/2 left-1/2 -translate-1/2"
