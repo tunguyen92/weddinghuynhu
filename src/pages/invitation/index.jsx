@@ -88,7 +88,7 @@ const BrideInvitation = () => {
         </a>
 
         <button className="text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-4">
-          <Link to="/">Về trang chủ</Link>
+          <Link to="/">Xem ảnh cưới</Link>
         </button>
 
         <AudioPlayer />

@@ -10,7 +10,7 @@ const Couple = () => {
       className="couple-section container py-25 md:pt-10 md:pb-32.5 mx-auto text-center"
     >
       <div className="title-flower mb-10 md:mb-11">
-        <h2 className="title-flower relative font-great-vibes text-4xl pt-20 md:pt-22 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-47px)] before:w-24 before:h-11">
+        <h2 className="title-flower text-header relative font-great-vibes text-4xl pt-20 md:pt-22 md:text-5xl before:bg-cover before:absolute before:top-0 before:left-[calc(50%-30px)]">
           Happy Couple
         </h2>
       </div>

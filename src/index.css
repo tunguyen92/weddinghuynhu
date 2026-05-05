@@ -31,13 +31,14 @@
   --font-muli: "Muli", "sans-serif";
   --font-great-vibes: "Great Vibes", "cursive";
   --font-corinthia: "Corinthia", "cursive";
-  --color-primary: #85aaba;
-  --color-primary-light: #b2c9d3;
-  --color-text: #414141;
-  --color-paragraph: #212529;
-  --color-icon: #738ea5;
-  --color-icon-bg: #e7eff6;
-  --color-button: #8ba1aa;
+  --color-primary: #D4A090;
+  --color-primary-light: #F2DDD4;
+  --color-header: #1a1a1a;
+  --color-text: #8C5747;
+  --color-paragraph: #3D1F14;
+  --color-icon: #C4896E;
+  --color-icon-bg: #F2DDD4;
+  --color-button: #C4896E;
   --animate-pulse-scale: pulse-scale 1s infinite;
   --filter-color-image: invert(50%) sepia(56%) saturate(156%) brightness(181%)
     contrast(58%);
@@ -88,8 +89,8 @@ p {
 
 .title-flower::before {
   background-image: url("/images/title-flower.png");
-  width: 100px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
 }
 
 .ant-float-btn.ant-float-btn-individual {

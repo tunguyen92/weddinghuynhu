@@ -24,7 +24,7 @@ const Footer = () => {
       >
         <div className="flex items-center justify-center text-center text-white">
           <div className="welcome-content z-10">
-            <div className="wedding-announcement size-56.25 lg:size-77.5 lg:max-w-95 bg-[#b2c9d3cc] rounded-full absolute flex items-center justify-center flex-col top-1/2 left-1/2 -translate-1/2 z-10">
+            <div className="wedding-announcement size-56.25 lg:size-77.5 lg:max-w-95 bg-primary rounded-full absolute flex items-center justify-center flex-col top-1/2 left-1/2 -translate-1/2 z-10">
               <span className="absolute inline-flex h-full w-full scale-105 rounded-full border border-primary-light z-[-1]"></span>
 
               <h2 className="couple-name font-great-vibes text-center text-3xl md:text-4xl">
