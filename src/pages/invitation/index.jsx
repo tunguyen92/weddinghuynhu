@@ -84,11 +84,13 @@ const BrideInvitation = () => {
           href="https://maps.app.goo.gl/wpLgp8gHMc8hiNn1A"
           target="_blank"
         >
-          Xem chỉ đường
+          {lang === "vi" ? "Xem chỉ đường" : "View Directions"}
         </a>
 
         <button className="text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-4">
-          <Link to="/">Xem ảnh cưới</Link>
+          <Link to="/">
+            {lang === "vi" ? "Xem ảnh cưới" : "View Wedding Photos"}
+          </Link>
         </button>
 
         <AudioPlayer />

@@ -29,12 +29,12 @@ const Couple = () => {
             Huỳnh Như
           </h3>
           <p className="text-paragraph leading-7 max-w-85 mx-auto">
-            Xin chào đại gia đình anh chị em bạn bè đồng nghiệp thân mến của
-            Như! Thật là một phước lành khi chúng ta có duyên gặp nhau ở đây và
-            hơn nữa là vào ngày trọng đại sắp tới này. Vô cùng biết ơn khi mọi
-            người có thể đến chung vui và ăn mừng ngày lên xe hoa của Như, đánh
-            dấu một cột mốc trưởng thành và giai đoạn mới của cuộc đời! Xin
-            nguyện an lành đến với tất cả chúng ta!
+            Xin chào Đại gia đình Họ hàng Anh chị em Bạn bè Đồng nghiệp gần xa
+            thân mến của Như! Thật là một phước lành khi chúng ta có duyên gặp
+            nhau ở đây và hơn nữa là vào ngày trọng đại sắp tới này. Vô cùng
+            biết ơn khi mọi người có thể đến chung vui và ăn mừng ngày lên xe
+            hoa của Như, đánh dấu một cột mốc trưởng thành và giai đoạn mới của
+            cuộc đời! Xin nguyện an lành đến với tất cả chúng ta!
           </p>
           <div className="social flex justify-center mt-4 md:mt-8">
             <Link
