@@ -76,7 +76,7 @@ const BrideInvitation = () => {
         <div className=" text-[#e0e0db] text-xs mb-3">
           {lang === "vi"
             ? "666 đường số 1, P.Bình Tân, TPHCM"
-            : "666 Street No.11, Binh Tan District, HCM City"}
+            : "666 Street No.1, Binh Tan District, HCM City"}
         </div>
 
         <a
@@ -87,7 +87,7 @@ const BrideInvitation = () => {
           {lang === "vi" ? "Xem chỉ đường" : "View Directions"}
         </a>
 
-        <button className="text-white! bg-[#98907e]! rounded-md text-sm px-4 py-1 mt-4">
+        <button className="text-white! bg-[#98907e]! rounded-md text-xs px-2 py-1 mt-4">
           <Link to="/">
             {lang === "vi" ? "Xem ảnh cưới" : "View Wedding Photos"}
           </Link>
